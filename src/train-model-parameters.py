@@ -15,6 +15,7 @@ def main(args):
     # read data
     df = get_data(args.training_data)
 
+
     # split data
     X_train, X_test, y_train, y_test = split_data(df)
 
