@@ -14,8 +14,7 @@ jobs:
   train-prod:
     if: >-
       github.event.issue.pull_request != null &&
-      contains(github.event.comment.body, '/train-prod') ||
-      contains(github.event.comment.body, '/deploy-prod')
+      contains(github.event.comment.body, '/train-prod')
     runs-on: ubuntu-latest
     environment: prod
 
